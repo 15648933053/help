@@ -1,0 +1,29 @@
+@use '@/styles/variables.scss' as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-bg-card;
+  border-radius: $radius-md;
+  padding: $spacing-lg $spacing-sm;
+  box-shadow: $shadow-card;
+}
+
+.icon {
+  font-size: 36rpx;
+  margin-bottom: $spacing-xs;
+}
+
+.value {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  margin-bottom: 4rpx;
+}
+
+.label {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}

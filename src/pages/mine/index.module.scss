@@ -1,0 +1,306 @@
+@use '@/styles/variables.scss' as *;
+
+.container {
+  min-height: 100vh;
+  background: $color-bg-page;
+  padding-bottom: 120rpx;
+}
+
+// ===== 用户信息卡片 =====
+.profileCard {
+  position: relative;
+  background: $gradient-primary;
+  border-radius: 0 0 $radius-xl $radius-xl;
+  overflow: hidden;
+  padding: $spacing-xl $spacing-lg $spacing-xl;
+}
+
+.profileDecor1 {
+  position: absolute;
+  top: -80rpx;
+  right: -40rpx;
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: $radius-round;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.profileDecor2 {
+  position: absolute;
+  bottom: -30rpx;
+  left: 60rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: $radius-round;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.profileContent {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.avatarWrap {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: $radius-round;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3rpx solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $spacing-lg;
+  flex-shrink: 0;
+}
+
+.avatarText {
+  font-size: 48rpx;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+}
+
+.profileInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.nickname {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+  display: block;
+  margin-bottom: $spacing-sm;
+  letter-spacing: 1rpx;
+}
+
+.stardustRow {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 184, 0, 0.15);
+  border-radius: $radius-button;
+  padding: 6rpx 20rpx;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.stardustIcon {
+  font-size: $font-size-sm;
+  color: $color-stardust;
+  margin-right: $spacing-xs;
+}
+
+.stardustValue {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: $color-stardust;
+  margin-right: $spacing-xs;
+}
+
+.stardustLabel {
+  font-size: $font-size-xs;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+// ===== 数据统计 =====
+.statsSection {
+  display: flex;
+  padding: $spacing-md $spacing-lg;
+  gap: $spacing-sm;
+}
+
+.statCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color-bg-card;
+  border-radius: $radius-md;
+  padding: $spacing-md 0;
+  box-shadow: $shadow-card;
+}
+
+.statValue {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+  margin-bottom: 4rpx;
+}
+
+.statLabel {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+// ===== 通用 Section =====
+.section {
+  padding: 0 $spacing-lg;
+  margin-top: $spacing-lg;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-md;
+}
+
+.sectionTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.sectionAction {
+  padding: 8rpx 24rpx;
+  background: $gradient-primary;
+  border-radius: $radius-button;
+  transition: all $transition-base;
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+.sectionActionText {
+  font-size: $font-size-xs;
+  color: $color-text-white;
+  white-space: nowrap;
+}
+
+// ===== 我的提交 =====
+.myProgramList {
+  background: $color-bg-card;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+.myProgramItem {
+  display: flex;
+  align-items: center;
+  padding: $spacing-md $spacing-lg;
+  border-bottom: 1rpx solid $color-divider;
+  transition: all $transition-base;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:active {
+    background: $color-bg-hover;
+  }
+}
+
+.myProgramRank {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: $radius-sm;
+  background: linear-gradient(135deg, rgba(91, 95, 239, 0.1), rgba(91, 95, 239, 0.05));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $spacing-md;
+  flex-shrink: 0;
+}
+
+.myProgramRankText {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  color: $color-primary;
+}
+
+.myProgramInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.myProgramName {
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+  display: block;
+  margin-bottom: 4rpx;
+  @include text-ellipsis;
+}
+
+.myProgramDesc {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+}
+
+.myProgramArrow {
+  font-size: $font-size-xl;
+  color: $color-text-disabled;
+  margin-left: $spacing-sm;
+  flex-shrink: 0;
+}
+
+.emptySection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xl 0;
+  background: $color-bg-card;
+  border-radius: $radius-md;
+}
+
+.emptyText {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}
+
+// ===== 功能列表 =====
+.menuList {
+  background: $color-bg-card;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: $spacing-lg;
+  border-bottom: 1rpx solid $color-divider;
+  transition: all $transition-base;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:active {
+    background: $color-bg-hover;
+  }
+}
+
+.menuIconWrap {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: $radius-sm;
+  background: $color-bg-page;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $spacing-md;
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  font-size: 28rpx;
+}
+
+.menuText {
+  flex: 1;
+  font-size: $font-size-md;
+  color: $color-text-primary;
+}
+
+.menuArrow {
+  font-size: $font-size-xl;
+  color: $color-text-disabled;
+  flex-shrink: 0;
+}

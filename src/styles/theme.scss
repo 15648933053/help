@@ -1,0 +1,40 @@
+// ============================================
+// 主题配色变量 - 星际宇宙风
+// ============================================
+
+// 品牌主题色：星际紫
+$color-primary: #5B5FEF;
+$color-primary-light: #7C7FF7;
+$color-primary-dark: #4346CC;
+
+// 功能色
+$color-success: #00b42a;
+$color-warning: #ff7d00;
+$color-error: #f53f3f;
+$color-info: #5B5FEF;
+
+// 星尘货币色
+$color-stardust: #FFB800;
+$color-stardust-light: #FFD666;
+$color-stardust-dark: #E6A600;
+
+// 背景色
+$color-bg-page: #F5F3FF;
+$color-bg-card: #ffffff;
+$color-bg-hover: #EDEAFC;
+
+// 文本色
+$color-text-primary: #1D2129;
+$color-text-secondary: #4E5969;
+$color-text-tertiary: #86909c;
+$color-text-disabled: #c9cdd4;
+$color-text-white: #ffffff;
+
+// 边框色
+$color-border: #E8E6F0;
+$color-divider: #F0EEF8;
+
+// 渐变
+$gradient-primary: linear-gradient(135deg, #5B5FEF 0%, #7C7FF7 100%);
+$gradient-stardust: linear-gradient(135deg, #FFB800 0%, #FFD666 100%);
+$gradient-header: linear-gradient(180deg, #EDEAFC 0%, #F5F3FF 100%);

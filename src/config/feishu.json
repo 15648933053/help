@@ -1,0 +1,18 @@
+{
+  "feishu": {
+    "appId": "cli_aaac1ee737789ceb",
+    "appSecret": "xWjH0JIWxn8AohSgG0Embf33w486xQgF",
+    "bitableAppToken": "TyRGwIxQribxTpkf3wLc5zlMnk2",
+    "tables": {
+      "programs": "tbll1Mq4qKm2Equo",
+      "users": "tblRgW0HtCDcCLD7",
+      "dailyStats": "tblAR32i1QcThZve",
+      "transactions": "tblppWavBRYQTPdC",
+      "redemptions": "tblrDQYGo150YENU"
+    }
+  },
+  "wx": {
+    "appId": "wx3d4200f27d153872",
+    "getOpenIdUrl": "YOUR_VERCEL_URL/api/getOpenId"
+  }
+}
